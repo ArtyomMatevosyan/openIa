@@ -14,7 +14,10 @@ export const SendButton = styled.div`
   cursor: pointer;
 `;
 
-export const TextAreaWrapper = styled.textarea``;
+export const TextAreaWrapper = styled.textarea`
+  border-radius: 8px;
+  padding: 8px;
+`;
 
 export const RequestContent = styled.div`
   display: flex;

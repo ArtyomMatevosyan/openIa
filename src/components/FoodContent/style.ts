@@ -6,6 +6,8 @@ export const FoodContentContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export const FoodImageContainer = styled.div`
@@ -15,16 +17,22 @@ export const FoodImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 `;
 export const FoodInfoWrapper = styled.div`
-  width: 70%;
-  height: 100%;
+  width: calc(70% - 24px);
+  height: calc(100% - 24px);
   background: #fefae0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 12px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 `;
+
 export const FoodTitle = styled.div`
   font-size: 32px;
 `;

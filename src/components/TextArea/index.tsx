@@ -4,7 +4,7 @@ import { RequestContent, SendButton, TextAreaWrapper } from "./style";
 import { TextAreaProps } from "../../types/index";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "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",
   organization: "org-oJqA3X89TZTCik3UCUQadzTQ",
   dangerouslyAllowBrowser: true,
 });
@@ -26,9 +26,6 @@ export const TextArea: FC<TextAreaProps> = ({
     });
     setImage(response.data[0].url || "");
     setIsLoadingImage(false);
-    // return {
-    //   text: response.data[0].url,
-    // };
   };
 
   const sendRequest = async (content: string) => {
@@ -50,7 +47,6 @@ export const TextArea: FC<TextAreaProps> = ({
     getImage(title);
   };
 
-  console.log(textAreaValue, "textAreaValue");
 
   return (
     <RequestContent>
@@ -61,6 +57,7 @@ export const TextArea: FC<TextAreaProps> = ({
         value={textAreaValue}
         rows={4}
         cols={50}
+        placeholder="Enter Ingredients"
       />
       <SendButton onClick={() => sendRequest(textAreaValue)}>Send</SendButton>
     </RequestContent>

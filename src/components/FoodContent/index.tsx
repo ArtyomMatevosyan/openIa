@@ -8,7 +8,6 @@ import {
   FoodImageContainer,
   FoodInfoWrapper,
   FoodTitle,
-  ImageTitle,
   MakingSteps,
   Step,
   TimeWrapper,
