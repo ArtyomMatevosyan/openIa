@@ -17,6 +17,7 @@ export const SendButton = styled.div`
 export const TextAreaWrapper = styled.textarea`
   border-radius: 8px;
   padding: 8px;
+  font-size: 16px;
 `;
 
 export const RequestContent = styled.div`

@@ -12,5 +12,14 @@ export const RecipeContent = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: #edede9;
+  padding-top: 50px;
+`;
+
+export const FooterContent = styled.footer`
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
 `;
