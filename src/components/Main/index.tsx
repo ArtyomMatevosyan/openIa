@@ -19,7 +19,7 @@ export const Main = () => {
       />
       <RecipeContent>
         {isLoading && <LoadingSpinner />}
-        {receivedData && (
+        {receivedData && !isLoading && (
           <FoodCard
             recipe={JSON.parse(receivedData || "")}
             image={image}

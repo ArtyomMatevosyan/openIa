@@ -4,7 +4,7 @@ import { RequestContent, SendButton, TextAreaWrapper } from "./style";
 import { TextAreaProps } from "../../types/index";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "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",
   organization: "org-oJqA3X89TZTCik3UCUQadzTQ",
   dangerouslyAllowBrowser: true,
 });
